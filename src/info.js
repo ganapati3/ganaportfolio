@@ -59,7 +59,7 @@ export const portfolio = [
     {
         projectname: "Dynamic Booking app",
         thumbnailurl: './assets/wpboss/wpbooking.png',
-        images: ['./assets/wpboss/wpbooking.png', './assets/wpboss/wpbooking2.png', './assets/wpboss/wpbooking3.png', "./assets/wpboss/wpbooking4.png", "/assets/wpboss/wpbooking5.png", "/assets/wpboss/wpbooking6.png", "/assets/wpboss/wpbooking7.png"],
+        images: ['./assets/wpboss/wpbooking.png', './assets/wpboss/wpbooking2.png', './assets/wpboss/wpbooking3.png', "./assets/wpboss/wpbooking4.png", "./assets/wpboss/wpbooking5.png", "./assets/wpboss/wpbooking6.png", "./assets/wpboss/wpbooking7.png"],
         projectdesc: 'A fully-featured booking application built with Vue.js and PHP. This app allows users to search, book, and manage reservations dynamically. It leverages modern web technologies to ensure a responsive and user-friendly experience.',
         techstack: ['Vue.js', 'PHP', 'JavaScript', 'HTML', "Tailwind CSS", "SQL"],
         livelink: '',
@@ -150,7 +150,7 @@ export const portfolio = [
         images: [],
         projectdesc: 'A static web application showcasing various food recipes. Built with HTML and CSS, this project highlights beautiful designs and easy navigation for food lovers.',
         techstack: ['HTML', "CSS"],
-        livelink: 'https://ganapatitodo.ccbp.tech/',
+        livelink: 'https://ganapatifood.ccbp.tech',
         status: 'Completed',
         type: 'Static Web App'
     }
