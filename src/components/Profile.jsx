@@ -14,8 +14,8 @@ function Profile() {
   };
 
   return (
-    <Card className="lg:w-80 w-full min-h-[fit-content] flex-grow overflow-y-auto px-6 flex flex-col gap-3 lg:h-auto lg:py-4 pb-2 md:pb-8 transition-all duration-300 ease-out">
-      <div className="bg-neutral-600/20 dark:bg-neutral-800 self-end px-5 py-1 md:py-2 block lg:hidden mr-[-1.5rem] shadow-md text-black dark:text-white rounded-bl-xl custom-gradient-hover">
+    <Card className="xl:w-80 w-full min-h-[fit-content] flex-grow overflow-y-auto px-6 flex flex-col gap-3 xl:h-auto xl:py-4 pb-2 xl:pb-8 transition-all duration-300 ease-out">
+      <div className="bg-neutral-600/20 dark:bg-neutral-800 self-end px-5 py-1 block xl:hidden mr-[-1.5rem] shadow-md text-black dark:text-white rounded-bl-xl custom-gradient-hover">
         <button onClick={handleShowInfo} type="button" className="self-end flex items-center gap-3">
           <p className="hidden md:block">Show info</p>
           <span className="block lg:hidden text-base">
@@ -24,11 +24,11 @@ function Profile() {
         </button>
       </div>
 
-      <div className="flex self-start lg:flex-col flex-row sm:justify-center justify-between items-center sm:px-10 gap-3">
-        <div>
+      <div className="flex self-start xl:flex-col flex-row sm:justify-start justify-between items-center sm:px-10 gap-5 w-full">
+        <div className="xl:mt-4 flex items-center justify-center border dark:border-neutral-800 transition-all duration-200 bg-gradient-to-br dark:from-neutral-900 from-neutral-200/10 dark:to-neutral-800 to-neutral-50/20 rounded-2xl shadow-lg">
           <img
-            className="rounded-lg w-20 md:w-28 h-20 md:h-28"
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAPFBMVEXk5ueutLepsLPo6uursbXJzc/p6+zj5ea2u76orrKvtbi0ubzZ3N3O0dPAxcfg4uPMz9HU19i8wcPDx8qKXtGiAAAFTElEQVR4nO2d3XqzIAyAhUD916L3f6+f1m7tVvtNINFg8x5tZ32fQAIoMcsEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQTghAJD1jWtnXJPP/54IgNzZQulSmxvTH6oYXX4WS+ivhTbqBa1r26cvCdCu6i0YXbdZ0o4A1rzV+5IcE3YE+z58T45lqo7g1Aa/JY5tgoqQF3qb382x7lNzBLcxft+O17QUYfQI4IIeklKsPSN4i6LKj/7Zm8n99RbHJpEw9gEBXNBpKIYLJqKYRwjOikf//r+J8ZsVuacbqCMNleI9TqGLGqMzhnVdBOdd6F/RlrFijiCoVMk320CBIahUxTWI0KKEcJqKbMdpdJb5QvdHq6wCI5qhKlgGMS/RBHkubWDAE+QZxB4xhCyDiDkLZxgGEVdQldzSKbTIhmZkFkSEPcVvmBn2SMuZB9od7fQDsMiDdKJjFUSCQarM5WirZ3C2TT/htYnyPcPfgrFHWz0BI74gr6J/IZiGUxAZGQLqmvQLTrtE/Go4YxhVRIpEw+sww1IIcqr5NKmUUzLF3d4/qPkYIp2T/obPuemlojFUR4t9Q2Vojhb7BmgElWHzLPH8hucfpefPNFTVgs9h1AdU/Pin96vwWbWdf+X9Absn3OdO34aMdsDnP8WgKYisTqI6CkNGqZQo1XA6Ef6AU32SJzOcBukHPF07/xNSgmHKa5BOhtezv6mA/rYJpwXNAnbRZ1XuF3BzDcO3vpA3+ny2909gbqE4hhD3LIPhLLyBNhPZvbZ3B+3tPYa18A7auSlXQayKwTPNLKDcuOB0xPYKDPFTkWsevQPRZ1J8Hji9I1KQ34r7hZhrwNwOZ97QxNx0drwn4QI0wQk1DcEsfKCWKdxVvxPSNUIp/knmAXT+nT+Ko3+0H96rcNb3m1fx7MBTJdeBJ7uFcWsc0wvgAsC4pROW0l2inbAmIBv/7GZmuhQH6API2rr8T0e6yuZJ+80A9LZeG62T3tik31XwxtwZcizKuTHkMjB1WdZde4Kmic/A5ZI3rr1ae21d08PlVHYfAaxw9G9CYRbJ+8ZdbTcMRV1XM3VdF0M32vtoTdZ0+u29s0OttJ5bz64UwinjaFMVY9vkqc3KKSxN21Xl+0L4Q3Vuv1tYl0pqnX6ms4XetFz7gdZVAgUEoJntfOUe4ZwsHd9FzqQ3Vv6xe41l0XJcqcKl6TZvlv7ClAW3BsqQW4X7ypApB8dmTgK4IX5wvqIVj33HtD2qSG4BqznxdIefL27Y4sahi0MdIdvUsDva8agGGbCtITmCY31MHD2O0uIdh/0rJDQ1VX5Zdxz3rR2QDbv6qXl9vudzqQtGm1Jv9LDXOsfvvB7VcZ8PDKD0mQ1VHPYQ9O+Yj4hR1IUD8rBnn3ho2m8oQMxbCFiKlL2ioSW5heeJqegED52CzxCtcGD3Kv8Wms9EYLyUhwaFIhSMBClevWEmiK/Iaogu4H7sg6ppQhQG8RUqivuTGOAJOg6FfgW0q0M0PQMRMEgXaeNf3SYDZ8PIMI0+wHgr/MgN7wYwpiLjCCqM6ydUDZLQiB6nDdNC8SDyig3jPPpFXGcC9O8BUBDVmgBY59E7Md/35Loe/UVEECEJwYggJjELZ4J71SaQSBeC02n4Da29CayJNA28SAhd2CQyC1Xw6pSmGSINQVuMhAZp4DClan9MgmkDDNmezqwS8sgtlXK/EPBhoaSmYVC/F7IO1jQEdHOlabpKh3+jzLQSTUiq4X2I+Ip/zU8rlaqAvkS21ElR+gqu3zbjjL+hIAiCIAiCIAiCIAiCsCf/AKrfVhSbvA+DAAAAAElFTkSuQmCC"
+            className="w-28 md:w-32 h-28 md:h-32"
+            src="./assets/avatar.png"
             alt="profileImg"
           />
         </div>
@@ -41,11 +41,11 @@ function Profile() {
       </div>
 
       <div
-        className={`transition-all duration-300 ease-in-out max-lg:overflow-hidden flex flex-col lg:max-h-full lg:opacity-100 gap-3 pb-4 ${
+        className={`transition-all duration-300 ease-in-out max-xl:overflow-hidden flex flex-col xl:max-h-full lg:opacity-100 gap-3 pb-4 ${
           showInfo ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="dark:bg-neutral-800 bg-zinc-200 h-0.5"></div>
+        <div className="dark:bg-neutral-800 bg-zinc-200 h-0.5 my-5"></div>
         <div className="flex items-center gap-5 dark:bg-neutral-800 bg-zinc-200 rounded-md px-3 py-3 shadow-md">
           <FaRegEnvelope size="20px" />
           <p>ganapatidev2@gmail.com</p>

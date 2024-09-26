@@ -85,9 +85,9 @@ function Layout() {
       </div>
 
       {/* Layout content */}
-      <div className='md:w-[90%] lg:flex-row w-full flex flex-col justify-between px-1 overflow-auto gap-5 py-4'>
+      <div className=' sm:w-[80%] md:w-[90%] xl:flex-row w-full flex flex-col justify-between px-1 overflow-auto gap-5 py-4'>
         <Profile />
-        <Card className="relative duration-100 transition-all ease-out lg:w-[calc(100%-22rem)] flex flex-col rounded-2xl flex-grow min-h-[calc(80vh-4rem)] mb-28 lg:mb-0" >
+        <Card className="relative duration-100 transition-all ease-out xl:w-[calc(100%-22rem)] flex flex-col rounded-2xl flex-grow min-h-[calc(80vh-4rem)] mb-28 lg:mb-0" >
           <div className="flex justify-between">
             <div className="pl-5 mt-5">
               <h1 className="text-2xl font-bold capitalize" >{ pageName}</h1>

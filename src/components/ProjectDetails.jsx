@@ -18,7 +18,7 @@ function ProjectDetails({ project, closeDetails }) {
                     <Carousel slides={project.images} /> :
                     <img className="h-[300px] md:h-[400px] object-scale-down" src={project.thumbnailurl} alt={project.projectname} />
                 }
-                <h1 className='text-3xl font-bold capitalize mt-3 leading-4'>{project.projectname}</h1>
+                <h1 className='text-3xl font-bold capitalize mt-3 xl:leading-4'>{project.projectname}</h1>
                 <p className="text-gray-500 text-base ">{project.type}</p>
 
                 <h1 className='text-base dark:text-neutral-300 mt-4' >{project.projectdesc}</h1>

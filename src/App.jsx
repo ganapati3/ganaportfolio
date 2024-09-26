@@ -21,7 +21,7 @@ function App() {
 
         {/* <Redirect to="/not-found" /> */}
       </Route>  
-       <Route path="*" element={<Navigate to="/not-found" />} />
+       <Route path="/*" element={<Navigate to="/not-found" />} />
       <Route path='/not-found' element={<Error/>} />
     </Routes>
   )
