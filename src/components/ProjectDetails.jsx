@@ -3,7 +3,7 @@ import { CiShare1 } from "react-icons/ci";
 
 import { resume } from "../info";
 import Card from "../ui/Card";
-import Carousel from "./carousel";
+import Carousel from "./Carousel";
 
 function ProjectDetails({ project, closeDetails }) {
     console.log(project)
