@@ -39,9 +39,9 @@ function About() {
                                 </div>
                             </div>
 
-                            <div onClick={() => setShowTestinomial('')} className={`fixed top-0 left-0 z-50 dark:bg-zinc-900/50 bg-zinc-50/20 w-screen h-screen justify-center items-center 
+                            <div onClick={() => setShowTestinomial('')} className={`fixed top-0 left-0 z-50 dark:bg-zinc-900/80 bg-zinc-500/50 w-screen h-screen justify-center items-center 
                                 ${showTestinomial === testinomial.name ? 'flex' : 'hidden'}`} key={`popup-${index}`}>
-                                <div className='dark:bg-zinc-900 max-w-[500px] box-content bg-zinc-50 opacity-100 py-4 sm:p-4 shadow-lg rounded-lg border border-neutral-400/10 flex  sm:flex-col w-auto h-auto'>
+                                <div className='mx-1 dark:bg-zinc-900 max-w-[500px] box-content bg-zinc-50 opacity-100 py-4 sm:p-4 shadow-xl rounded-lg border border-neutral-300/50 dark:border-neutral-700 flex  sm:flex-col w-auto h-auto'>
                                     <button onClick={()=>setShowTestinomial('')} type="button" className='text-2xl sm:self-end hidden md:block'>
                                         <IoCloseCircleOutline/>
                                     </button>
