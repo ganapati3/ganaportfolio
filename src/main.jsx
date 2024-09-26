@@ -4,6 +4,8 @@ import './index.css'
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 
+const isProduction = process.env.NODE_ENV === 'production';
+
 // const router = createBrowserRouter([
 //   {
 //     path: '/',
@@ -15,7 +17,7 @@ import App from './App';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={isProduction ? '/ganaportfolio':'/'}>
         <App/>
       </BrowserRouter>
   </StrictMode>,

@@ -13,7 +13,7 @@ function About() {
                 <h1 className='text-xl font-bold capitalize mt-3'>service&apos;s offering</h1>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-2 gap-2'>
                     {about.services.map((service,index) => (
-                        <div key={index} className=' scale-95 hover:scale-100 border dark:border-neutral-800 transition-all duration-200 px-3 flex flex-col bg-gradient-to-br dark:from-neutral-900 from-neutral-200/10 dark:to-neutral-800 to-neutral-50/20 items-center w-full gap-3 text-center shadow-lg rounded-xl py-3' >
+                        <div key={`service-${index}`} className=' scale-95 hover:scale-100 border dark:border-neutral-800 transition-all duration-200 px-3 flex flex-col bg-gradient-to-br dark:from-neutral-900 from-neutral-200/10 dark:to-neutral-800 to-neutral-50/20 items-center w-full gap-3 text-center shadow-lg rounded-xl py-3' >
                             <service.icon className='text-[#ffd900aa] text-[50px]' />
                             <h2 className='font-bold' >{service.service}</h2>
                             <p>{ service.description }</p>
@@ -24,7 +24,7 @@ function About() {
                 <div className='grid grid-cols-1 md:grid-cols-2 px-2 gap-2 relative'>
                     {about.testinomials.map((testinomial, index) => (
                         <>
-                            <div onClick={()=>setShowTestinomial(testinomial.name)} key={index} className='flex cursor-pointer overflow-hidden scale-95 hover:scale-100 border dark:border-neutral-800 transition-all duration-200 bg-gradient-to-br dark:from-neutral-900 from-neutral-200/10 dark:to-neutral-800 to-neutral-50/20 items-center w-full gap-5 text-center shadow-lg rounded-xl p-4' >
+                            <div onClick={()=>setShowTestinomial(testinomial.name)} key={`testinomial-${index}`} className='flex cursor-pointer overflow-hidden scale-95 hover:scale-100 border dark:border-neutral-800 transition-all duration-200 bg-gradient-to-br dark:from-neutral-900 from-neutral-200/10 dark:to-neutral-800 to-neutral-50/20 items-center w-full gap-5 text-center shadow-lg rounded-xl p-4' >
                                 {/* <service.icon className='text-[#ffd900aa] text-[50px]' /> */}
                                 <img className='h-20' src="/assets/testinomialavatar.png" alt="testiavatar" />
                                 <div className='text-left flex flex-col gap-3'>
@@ -33,7 +33,7 @@ function About() {
                                 </div>
                             </div>
                             <div onClick={() => setShowTestinomial('')} className={`fixed top-0 left-0 z-50 dark:bg-zinc-900/50 bg-zinc-50/20 w-screen h-screen justify-center items-center 
-                                ${showTestinomial === testinomial.name ? 'flex' : 'hidden'}`} key={index}>
+                                ${showTestinomial === testinomial.name ? 'flex' : 'hidden'}`} key={`popup-${index}`}>
                                 <div className='dark:bg-zinc-900 max-w-[500px] box-content bg-zinc-50 opacity-100 py-4 sm:p-4 shadow-lg rounded-lg border border-neutral-400/10 flex  sm:flex-col w-auto h-auto'>
                                     <button onClick={()=>setShowTestinomial('')} type="button" className='text-2xl sm:self-end hidden md:block'>
                                         <IoCloseCircleOutline/>

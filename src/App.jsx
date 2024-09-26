@@ -1,4 +1,4 @@
-import {HashRouter as Router, Navigate, Route, Routes} from 'react-router-dom'
+import {Navigate, Route, Routes} from 'react-router-dom'
 import About from "./pages/About"
 import Certifications from "./pages/Certifications"
 import Contact from "./pages/Contact"
@@ -11,7 +11,6 @@ import './App.css'
 
 function App() {
   return (
-    <Router>
     <Routes>
       <Route  path='/' element={<Layout/>} >
         <Route index element={<About />} />
@@ -24,9 +23,8 @@ function App() {
       </Route>  
        <Route path="*" element={<Navigate to="/not-found" />} />
       <Route path='/not-found' element={<Error/>} />
-      </Routes>
-    </Router>
+    </Routes>
   )
 }
 
-export default App;
+export default App
