@@ -180,7 +180,7 @@ export const resume = {
     ],
     experience: [
         {
-            company: "Maitri Diamonds Inc.",
+            company: "Contract work for codeOptim",
             role: "Full stack developer",
             duration: "Oct 2022 - Ongoing",
             location:"Surat"
