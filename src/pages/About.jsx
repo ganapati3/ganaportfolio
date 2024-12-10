@@ -26,7 +26,7 @@ function About() {
                         <>
                            <div 
                                 onClick={() => setShowTestinomial(testinomial.name)} 
-                                key={`testinomial-${index}`} 
+                                key={`testinomial_${index}`} 
                                 className={`flex cursor-pointer overflow-hidden scale-95 hover:scale-100 border dark:border-neutral-800 transition-all duration-200 bg-gradient-to-br dark:from-neutral-900 from-neutral-200/10 dark:to-neutral-800 to-neutral-50/20 items-center w-full gap-5 text-center shadow-lg rounded-xl p-4 
                                 ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse md:flex-row'}`}
                             >
@@ -40,7 +40,7 @@ function About() {
                             </div>
 
                             <div onClick={() => setShowTestinomial('')} className={`fixed top-0 left-0 z-50 dark:bg-zinc-900/80 bg-zinc-500/50 w-screen h-screen justify-center items-center 
-                                ${showTestinomial === testinomial.name ? 'flex' : 'hidden'}`} key={`popup-${index}`}>
+                                ${showTestinomial === testinomial.name ? 'flex' : 'hidden'}`} key={`popup_${index}`}>
                                 <div className='mx-1 dark:bg-zinc-900 max-w-[500px] box-content bg-zinc-50 opacity-100 py-4 sm:p-4 shadow-xl rounded-lg border border-neutral-300/50 dark:border-neutral-700 flex  sm:flex-col w-auto h-auto'>
                                     <button onClick={()=>setShowTestinomial('')} type="button" className='text-2xl sm:self-end hidden md:block'>
                                         <IoCloseCircleOutline/>

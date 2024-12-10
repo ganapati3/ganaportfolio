@@ -180,8 +180,8 @@ export const resume = {
     ],
     experience: [
         {
-            company: "Contract work for codeOptim",
-            role: "Full stack developer",
+            company: "CodeOptim",
+            role: "Frontend developer",
             duration: "Oct 2022 - Ongoing",
             location:"Surat"
         }

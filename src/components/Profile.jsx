@@ -48,7 +48,7 @@ function Profile() {
         <div className="dark:bg-neutral-800 bg-zinc-200 h-0.5 my-5"></div>
         <div className="flex items-center gap-5 dark:bg-neutral-800 bg-zinc-200 rounded-md px-3 py-3 shadow-md">
           <FaRegEnvelope size="20px" />
-          <p>ganapatidev2@gmail.com</p>
+          <p>ganapathit3@gmail.com</p>
         </div>
         <div className="flex items-center gap-5 dark:bg-neutral-800 bg-zinc-200  rounded-md px-3 py-3 shadow-md">
           <MdOutlinePhone size="20px" />

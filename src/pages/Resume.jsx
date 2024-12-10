@@ -1,6 +1,6 @@
 import { IoBookOutline } from "react-icons/io5";
 import { GiSkills } from "react-icons/gi";
-
+import { HiOutlineFolderDownload } from "react-icons/hi";
 import { MdWorkOutline } from "react-icons/md";
 import { resume } from "../info";
 
@@ -10,14 +10,20 @@ function Resume() {
 
             {resume.education.length > 0 &&
                 <div className="flex flex-col w-full">
-                    <div className="flex">
-                        <div className="flex flex-col ml-[-8px] items-center self-start">
-                            <span className="text-xl shadow-lg bg-gradient-to-br dark:from-neutral-900 from-neutral-200/10 dark:to-neutral-800 to-neutral-50/20 p-3 rounded-lg">
-                                <IoBookOutline />
-                            </span>
-                            <span className="h-5 w-1 bg-gray-300"></span>
+                    <div className="flex items-center justify-between">
+                        <div className="flex">
+                            <div className="flex flex-col ml-[-8px] items-center self-start">
+                                <span className="text-xl shadow-lg bg-gradient-to-br dark:from-neutral-900 from-neutral-200/10 dark:to-neutral-800 to-neutral-50/20 p-3 rounded-lg">
+                                    <IoBookOutline />
+                                </span>
+                                <span className="h-5 w-1 bg-gray-300"></span>
+                            </div>
+                            <h2 className="text-2xl font-bold ml-6">Education</h2>
                         </div>
-                        <h2 className="text-2xl font-bold ml-6">Education</h2>
+                        <a href="./src/Ganapati_resume_frontend.pdf" className="flex items-center gap-3" download>
+                            <HiOutlineFolderDownload className="text-3xl md:text-base" />
+                            <span className="hidden md:block">Download Resume</span>
+                        </a>
                     </div>
                     {
                         resume.education.map((education, index) => (
