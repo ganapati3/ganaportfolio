@@ -5,7 +5,7 @@ import { RiTailwindCssLine } from "react-icons/ri";
 
 
 export const about = {
-    desc: "I am a Full-Stack Developer with 2 years of experience specializing in Vue.js, React.js, Python, PHP, and Node.js. My expertise includes developing ERP systems, booking platforms, e-commerce applications, and custom WordPress plugins. I excel in creating scalable, user-friendly web applications, ensuring seamless integration and high performance.\n\n\tI have a strong track record of collaborating with clients to deliver tailored solutions that meet their unique needs. I’m dedicated to writing clean, maintainable code and staying updated with industry trends to provide the best results. Whether leading a project or contributing as part of a team, I am committed to achieving excellence in every aspect of my work.",
+    desc: "I am a Full-Stack Developer with more than 2 years of experience specializing in Vue.js, React.js, Python, PHP, and Node.js. My expertise includes developing ERP systems, booking platforms, e-commerce applications, and custom WordPress plugins. I excel in creating scalable, user-friendly web applications, ensuring seamless integration and high performance.\n\n\tI have a strong track record of collaborating with clients to deliver tailored solutions that meet their unique needs. I’m dedicated to writing clean, maintainable code and staying updated with industry trends to provide the best results. Whether leading a project or contributing as part of a team, I am committed to achieving excellence in every aspect of my work.",
     services: [
           {
             service: "Web Application Development",
@@ -64,7 +64,7 @@ export const portfolio = [
         techstack: ['Vue.js', 'PHP', 'JavaScript', 'HTML', "Tailwind CSS", "SQL"],
         livelink: '',
         status: 'In Progress',
-        type: 'Full Stack Web Development (WorkPress Plugin)'
+        type: 'Full Stack Web Development (WordPress Plugin)'
     },
     {
         projectname: "AI Integrated Medical App (MVP)",
@@ -84,7 +84,7 @@ export const portfolio = [
         techstack: ['Vue.js', 'JavaScript', 'HTML', "Tailwind CSS", "SQL"],
         livelink: '',
         status: 'Completed',
-        type: 'Full Stack Web Development (WorkPress Plugin)'
+        type: 'Full Stack Web Development (WordPress Plugin)'
     },
     {
         projectname: "Upwork Chrome Extension",
@@ -175,14 +175,14 @@ export const resume = {
             collegename: "SNRRM ITI",
             branch: "Fitter",
             duration: "2016 - 2018",
-            location:"Yetapaka,EG.,Ap"
+            location:"Pentapadu,WG.,Ap"
         }
     ],
     experience: [
         {
             company: "CodeOptim",
             role: "Frontend developer",
-            duration: "Oct 2022 - Ongoing",
+            duration: "Oct 2022 - Dec 2024",
             location:"Surat"
         }
     ],
